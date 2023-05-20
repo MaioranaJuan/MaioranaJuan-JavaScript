@@ -1,0 +1,132 @@
+/* INDEX */
+.main {
+    background-image: url(../assets/fondo/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-fullview.WebP);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 30px 10px 30px;
+
+    .resumen {
+        background-color: $ColorPrin;
+        display: flex;
+        border-radius: 20px;
+
+        .img-resumen {
+            object-fit: contain;
+            height: 100%;
+            width: 60%;
+            border-radius: 20px;
+            box-shadow: 10px 0px 15px 0px #000000;
+        }
+
+        .txt-resumen {
+            color: #000000;
+            font-family: $Text;
+            font-size: 20px;
+            padding: 20px;
+
+            h1 {
+                color: #ffffff;
+            }
+        }
+    }
+
+    /* tarjetas */
+
+    .titulo {
+        width: 250px;
+        font-family: $TextNyF;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #413d3d;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tarjetas {
+        display: flex;
+        color: #000000;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        
+
+        .card1 {
+            @include CardsTam(300px, 10px, #047c7c);
+
+            img {
+                @include FondosCard(url(../assets/NieblaCard.WebP), contain, 350px, 100%);
+            }
+        }
+
+        .card2 {
+            @include CardsTam(300px, 10px, #358634);
+
+            img {
+                @include FondosCard(url(../assets/Puerta-Konoha.jpg), cover, 350px, 100%);
+            }
+        }
+
+        .card3 {
+            @include CardsTam(300px, 10px, #cfa275);
+
+            img {
+                @include FondosCard(url(../assets/ArenaCard.WebP), cover, 350px, 100%);
+            }
+        }
+
+        .card4 {
+            @include CardsTam(300px, 10px, $ColorPrin);
+
+            img {
+                @include FondosCard(url(../assets/SonidoCard.jpg), contain, 350px, 100%);
+            }
+        }
+
+        img{
+            @extend %hover;
+        }
+
+        .subtitulos {
+            font-family: $TextSubt;
+            font-size: 30px;
+        }
+
+    }
+
+    /* secciones */
+    .secciones {
+        gap: 30px;
+
+        div {
+            transition: 0.5s;
+            filter: grayscale(1);
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+                filter: grayscale(0);
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $TextNyF;
+                font-size: 50px;
+                color: #ffff;
+                -webkit-text-stroke: 2px #000000;
+            }
+        }
+
+        .aldeas {
+            @include Secciones (url(../assets/Aldeas.WebP), center, cover);
+        }
+
+        .tecnicasElementales {
+            @include Secciones (url(../assets/Tecnicaselementales.jpg), center, cover);
+        }
+
+    }
+
+}

@@ -1,0 +1,33 @@
+%imagen {
+    width: 100%;
+    height: 100%;
+}
+
+%hover {
+    transition: 0.5s;
+    filter: blur(3px);
+
+    &:hover {
+        filter: blur(0);
+    }
+}
+
+%games {
+    background-color: #191919;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+%casilla {
+    font-family: $TextCards;
+
+    input,
+    textarea {
+        padding: 10px;
+        resize: none;
+        width: 100%;
+    }
+}

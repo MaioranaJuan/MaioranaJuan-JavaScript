@@ -1,0 +1,68 @@
+/* CONTACTO */
+
+.contacto-main {
+    background-color: #191919;
+    padding: 50px;
+
+
+    .contacto-img {
+        display: flex;
+        background-image: url(../assets/Banner2.jpg);
+        background-position: center;
+        height: 130px;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: $TextNyF;
+            color: #ffff;
+            -webkit-text-stroke: 2px #000000;
+        }
+    }
+
+    .formulario {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        img {
+            object-fit: cover;
+            padding: 50px;
+        }
+
+        .form {
+            background-color: #000000;
+            color: #ffff;
+            padding: 30px;
+            width: 100%;
+
+            .casilla1 {
+                @extend %casilla;
+            }
+
+            .casilla2 {
+                @extend %casilla;
+            }
+
+            .casilla3 {
+                @extend %casilla;
+            }
+
+            .buttonSend {
+                display: flex;
+                justify-content: end;
+                padding-top: 10px;
+
+                .btnContacto {
+                    font-size: 20px;
+                    font-family: $TextNyF;
+                    width: 80px;
+                    background-color: #3c3cdd;
+                    border-radius: 8px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+}

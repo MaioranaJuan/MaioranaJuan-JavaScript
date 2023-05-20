@@ -1,0 +1,166 @@
+/* Responsive o Media q */
+@media only screen and (min-width:320px) {
+
+    /* INDEX */
+    .header {
+        width: 100%;
+    }
+
+    .resumen {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        height: 100%;
+    }
+
+    .tarjetas {
+        gap: 20px;
+    }
+
+    .secciones {
+        display: flex;
+        flex-direction: column;
+
+        .section {
+            height: 150px;
+        }
+
+    }
+
+    /* footer */
+
+    .footer {
+        width: 100%;
+
+        .redes {
+            width: 31%;
+
+            h2{
+                font-size: 20px;
+            }
+        }
+
+        .logof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+
+            .datanaru {
+                font-size: 30px;
+            }
+        }
+
+        .footnav {
+            width: 30%;
+            padding-right: 0px;
+        }
+    }
+
+    /* CONTACTO */
+    .formulario img {
+        display: none;
+    }
+
+    // Aldeas
+    .imgRendi{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+
+    // header
+    .logo {
+        display: flex;
+        font-size: 32px;
+        align-items: center;
+
+        img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    // CONTACTO
+    .casilla1 {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+    }
+
+    .contacto-img h1{
+        font-size: 70px;
+    }
+
+    // INDEX
+    .secciones {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto;
+        gap: 30px;
+
+        .section {
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    // FOOTER
+    .redes1 {
+        display: grid;
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'area1 .. area3'
+            '.. area2 ..';
+    }
+
+    .logof a {
+        font-size: 50px;
+
+        .datanaru {
+            font-size: 40px;
+        }
+    }
+
+    .imgRendi{
+        width: 40%;
+        height: 100%;
+    }
+
+    .imgMapa{
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+
+    // INDEX    
+    .resumen {
+        flex-direction: row;
+        padding-top: 0px;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // DESCARGAS
+    .celularDescargas {
+        display: none;
+    }
+
+    .descargas-main {
+        display: block;
+    }
+
+    // CONTACTO
+    .formulario img {
+        display: block;
+    }
+
+}

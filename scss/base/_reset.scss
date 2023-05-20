@@ -1,0 +1,47 @@
+@font-face {
+    font-family: nyf;
+    src: url(../assets/Font/Oswald/Oswald-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: txt;
+    src: url(../assets/Font/Teko/Teko-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: cards;
+    src: url(../assets/Font/Kaushan_Script/KaushanScript-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: subtitulo;
+    src: url(../assets/Font/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+    font-display: swap;
+}
+
+
+/* reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: medium;
+    line-height: normal;
+    font-family: none;
+}

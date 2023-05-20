@@ -1,0 +1,39 @@
+/* Bootstrap (Aldeas)*/
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0px;
+}
+
+.carouselTamaño img {
+    object-fit: contain;
+    height: 400px;
+}
+
+.bg-perso {
+    background-color: #a74b04;
+}
+
+.bg-perso2 {
+    background-color: #e62020a9;
+}
+
+.card {
+    height: 100%;
+
+    img {
+        height: 300px;
+    }
+}
+
+.imgMapa{
+    height: auto;
+    width: 100%;
+}
+
+.navPerso{
+    background-color: $ColorPrin;
+}

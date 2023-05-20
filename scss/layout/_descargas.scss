@@ -1,0 +1,113 @@
+/* DESCARGAS */
+
+.celularDescargas {
+    background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-family: $TextNyF;
+    font-size: 30px;
+    display: flex;
+    padding: 80px;
+    height: 100vh;
+    align-items: center;
+}
+
+.descargas-main {
+    display: none;
+}
+
+.celularDescargas {
+    display: flex;
+}
+
+.descargas-main {
+    padding: 40px;
+    background-image: url(../assets/fondo/5033317.WebP);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-family: $TextNyF;
+        font-size: 80px;
+    }
+
+    h2 {
+        font-family: $TextSubt;
+        background-color: #3d3a3a;
+        color: #ffffff;
+    }
+
+    /* JUEGOS */
+    .game {
+        @extend %games;
+        grid-template-areas:
+            'f1 f5 f5'
+            'f2 f2 f3'
+            'f2 f2 f4'
+            '.. boton ..';
+
+        img {
+            @extend %imagen;
+        }
+    }
+
+    .game2 {
+        @extend %games;
+        grid-template-areas:
+            'f1 f5 f5'
+            'f1 f3 f4'
+            'f2 f2 boton';
+
+        img {
+            @extend %imagen;
+        }
+    }
+
+    .f1 {
+        grid-area: f1;
+    }
+
+    .f2 {
+        grid-area: f2;
+    }
+    .g2{
+        height: 400px;
+    }
+
+    .f3 {
+        grid-area: f3;
+    }
+
+    .f4 {
+        grid-area: f4;
+    }
+
+    .f5 {
+        grid-area: f5;
+        color: #ffffff;
+    }
+
+    .btnarea {
+        grid-area: boton;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-descarga {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-family: $Text;
+        width: 200px;
+        background-color: #3c3cdd;
+        border-radius: 8px;
+    }
+
+}

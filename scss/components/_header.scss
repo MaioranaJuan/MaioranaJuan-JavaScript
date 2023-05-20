@@ -1,0 +1,29 @@
+/* HEADER */
+header {
+    background-color: $ColorPrin;
+    font-family: $TextNyF;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    nav {
+        a {
+            color: #070707;
+            background-image: linear-gradient(#000000, #000000);
+            background-position: 50% 60%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.5s;
+
+            &:hover {
+                background-image: linear-gradient(#000000, #000000);
+                background-size: 90% 2px;
+            }
+        }
+    }
+
+    .nav-link{
+        transition: 0.5s;
+    }
+}

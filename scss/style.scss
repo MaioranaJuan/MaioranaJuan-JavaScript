@@ -1,0 +1,17 @@
+// base
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/extend";
+@import "./base/mixin";
+
+// components
+@import "./components/header";
+@import "./components/footer";
+
+// layouts
+@import "./layout/index";
+@import "./layout/descargas";
+@import "./layout/contacto";
+@import "./layout/bootstrap";
+@import "./layout/medias";
+
