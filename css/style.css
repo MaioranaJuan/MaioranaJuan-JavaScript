@@ -66,6 +66,16 @@ body {
     resize: none;
     width: 100%; }
 
+.buttonT1, .buttonT2 {
+  padding: 35px;
+  border-radius: 20px;
+  background-attachment: inherit;
+  background-size: cover;
+  background-position: center;
+  -webkit-text-stroke: 2px #000000;
+  font-size: 50px;
+  color: #ffff; }
+
 /* HEADER */
 header {
   background-color: #DC5F00;
@@ -454,3 +464,16 @@ ul {
     display: block; }
   .formulario img {
     display: block; } }
+
+.TiendaGeneral {
+  background: linear-gradient(to bottom, #29cee47e, #085be9);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center; }
+
+.buttonT1 {
+  background-image: url(../assets/Tienda/calcu.jpg); }
+
+.buttonT2 {
+  background-image: url(../assets/Tienda/codigo.jpg); }

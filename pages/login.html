@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login | Datanaru</title>
+
+</head>
+
+<body>
+
+<!--Navegador bootstrap-->
+<header>
+    <nav class="navbar navbar-expand-md d-flex">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="me-auto navbar-brand logo" href="../index.html">
+                    <img src="../assets/logo.png" alt="Simbolo de Konoha">DataNaru</a>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../index.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu navPerso">
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="./aldeas.html">Aldeas</a></li>
+                            <li><a class="dropdown-item" href="./tecnicasElementales.html">Tecnicas Elementales</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./tienda.html">Tienda</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./descargas.html">Descargas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <form class="form">
+        <div class="casilla1">
+            <label for="Name">Usuario:</label>
+            <input type="text" name="name" placeholder="Ingrese su usuario" autofocus>
+            <label for="apellido">Contraseña</label>
+            <input type="text" name="apellido" placeholder="Ingrese su contraseña">
+        </div>
+        <div class="buttonSend">
+            <button type="submit" class="btnContacto">Enviar</button>
+        </div>
+    </form>
+
+</main>
+
+<!--Footer / pie de pagina-->
+<footer class="footer">
+
+    <!-- Redes -->
+    <div class="redes">
+        <h3>Siguenos en nuestras redes:</h3>
+        <div class="redes1">
+            <a class="ig" href="https://www.instagram.com/juan_maiorana/">Instagram
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="fb" href="https://www.facebook.com/">Facebook
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="tw" href="https://twitter.com/?lang=es">Twitter
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Logo footer -->
+    <div class="logof">
+        <a href="./index.html">
+            <h4 class="datanaru">DataNaru</h4>
+        </a>
+    </div>
+
+    <!-- Navegador footer -->
+    <div class="footnav">
+        <ul>
+            <li>
+                <a href="../index.html" class="color-foot">Inicio</a>
+                <a href="./aldeas.html" class="color-foot"> / Aldeas</a>
+                <a href="./tecnicasElementales.html" class="color-foot"> / Tecnicas Elementales</a>
+            </li>
+            <li>
+                <a href="./descargas.html" class="color-foot">Descargas</a>
+            </li>
+            <li>
+                <a href="./contacto.html" class="color-foot">Contacto</a>
+            </li>
+        </ul>
+    </div>
+
+</footer>
+
+</body>
+
+</html>
